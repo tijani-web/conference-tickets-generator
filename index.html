@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference ticket generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section class="form-design" id="formWrap">
+      <div class="top">
+        <img src="conference-ticket-generator-main/assets/images/pattern-circle.svg" alt="">
+      </div>
+     <div class="circle">
+        <img src="conference-ticket-generator-main/assets/images/pattern-squiggly-line-top.svg" alt="">
+     </div>
+
+     <div class="container">
+        <div class="logo">
+            <img src="conference-ticket-generator-main/assets/images/logo-full.svg" alt="">
+        </div>
+        <div class="title-text">
+            <h1> Your Journey to Coding Conf 2025 Starts Here!</h1>
+        </div>
+        <div class="sub-text">
+            <p>Secure your spot at next year's biggest coding conference.</p>
+        </div>
+        <form action="" id="ticketForm">
+            <div class="form-group">
+             <label for="">Upload Avatar</label>
+             <div class="upload-box">
+                <div class="upload-inner-box">
+                    <img src="conference-ticket-generator-main/assets/images/icon-upload.svg" alt="" id="uploadIcon">
+                </div>
+                <p class="upload-text">Drag and drop or click to upload</p>
+              </div>
+              <input type="file" id="fileInput" class="real-input"/>
+            <div class="image-size">
+                <img src="conference-ticket-generator-main/assets/images/icon-info.svg" alt="">
+                <p id="uploadText">Upload your photo (JPG or PNG, max size: 500KB).</p>
+            </div>
+            </div>
+
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="userName" required>
+              <span class="error-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="name">Email Address</label>
+                <input type="email" id="userEmail" placeholder="example@email.com" required>
+            </div>
+            <div id="emailError">
+                <img src="conference-ticket-generator-main/assets/images/icon-info.svg" alt="">
+                <p style="font-size: 12px;">please enter a valid email address</p>
+            </div>
+              
+
+            <div class="form-group">
+                <label for="name">GitHub Username</label>
+                <input type="text" id="userGit" placeholder="@yourusername" required>
+            </div>
+
+            <div class="submit">
+                <input type="button" value="Generate My Ticket" id="submit">
+            </div>
+        </form>
+     </div>
+
+     <div class="left-buttom">
+        <img src="conference-ticket-generator-main/assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg" alt="">
+     </div>
+    </section>
+
+
+    <section class="ticket-design" id="ticketWrap">
+      <div class="top">
+        <img src="conference-ticket-generator-main/assets/images/pattern-circle.svg" alt="">
+      </div>
+     <div class="circle">
+        <img src="conference-ticket-generator-main/assets/images/pattern-squiggly-line-top.svg" alt="">
+     </div>
+        <div class="ticket-container">
+            <div class="logo">
+                <img src="conference-ticket-generator-main/assets/images/logo-full.svg" alt="">
+            </div>
+            <div class="tick-name">
+                <h1>Congrats, <span id="ticketName"></span>
+                    Your ticket is ready.
+                 </h1>
+            </div>
+            <div class="sub-text ticket-sub">
+                <p> We've emailed your ticket to <br> <span id="ticketEmail"></span> 
+                    and will send updates in <br> the run up to the event.</p>
+            </div>
+
+            <div class="ticket-wrapper">
+                <img src="conference-ticket-generator-main/assets/images/pattern-ticket.svg" alt="">
+                <div class="ticket-content">
+                    <div class="logo">
+                        <img src="conference-ticket-generator-main/assets/images/logo-full.svg" alt="">
+                        <p class="event-date">Jan 31, 2025 / Austin, TX</p>
+                    </div>
+
+                    <p id="ticketID"></p>
+                    
+                  <div class="ticket-user">
+                     <img src="conference-ticket-generator-main/assets/images/image-avatar.jpg" alt="avatar" class="avatar" id="ticketImage" />
+                     <div class="ticket-join">
+                       <p class="ticket-name" id="ticket-name"></p>
+                       <p class="ticket-email" id="ticket-email"></p>
+                     </div>
+                </div>
+            </div>
+        </div>
+       
+    </section>
+
+
+
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
