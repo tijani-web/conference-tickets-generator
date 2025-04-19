@@ -159,6 +159,9 @@ form #avatar{
 }
 
 @media (max-width:1180px) {
+    form input{
+        max-width: 100%;
+    }
     .container{
         margin-top: -10rem;
     }
@@ -170,6 +173,9 @@ form #avatar{
 @media (max-width:768px) {
     body{
         background-image: url(conference-ticket-generator-main/assets/images/background-mobile.png);
+    }
+    form input{
+        max-width: 100%;
     }
     .circle img{
         width: 200px;
@@ -211,6 +217,13 @@ form #avatar{
     }
 }
 @media (max-width:375px) {
+    form  input{
+        /* max-width: 90%; */
+        width: 280px;
+    }
+    .upload-box{
+        width: 280px;
+    }
     .title-text h1{
         padding: 5px;
         font-size: 1.1rem;
